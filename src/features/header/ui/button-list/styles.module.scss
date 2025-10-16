@@ -1,0 +1,15 @@
+.list {
+	margin-top: 20px;
+	display: flex;
+	max-width: 550px;
+	width: 100%;
+	gap: 10px;
+	z-index: 2;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+	.list {
+		padding: 0 10px;
+	}
+}

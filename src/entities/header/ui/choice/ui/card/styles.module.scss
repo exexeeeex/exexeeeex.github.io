@@ -1,0 +1,9 @@
+.card {
+	flex: 1;
+	&__content {
+		display: flex;
+		align-items: center;
+		margin: auto 0;
+		gap: 10px;
+	}
+}

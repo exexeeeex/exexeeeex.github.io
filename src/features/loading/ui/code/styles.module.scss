@@ -1,0 +1,41 @@
+.place {
+	position: relative;
+	overflow: hidden;
+	max-width: 100vw;
+	text-align: center;
+}
+
+.place__line {
+	opacity: 1;
+	transform: translateX(-100%);
+	animation: glitch 3s infinite;
+	font-size: 20px;
+
+	@for $i from 1 through 20 {
+		&:nth-child(#{$i}) {
+			animation-delay: #{$i * 0.1}s, #{$i * 0.1}s;
+		}
+	}
+}
+
+@keyframes glitch {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	93% {
+		transform: translateX(0);
+	}
+	94% {
+		transform: translateX(-2px) skewX(-2deg);
+	}
+	95% {
+		transform: translateX(3px) skewX(3deg);
+	}
+	96% {
+		transform: translateX(-1px) skewX(-1deg);
+	}
+	97% {
+		transform: translateX(0);
+	}
+}

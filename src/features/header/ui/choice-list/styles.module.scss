@@ -1,0 +1,19 @@
+.list {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	max-width: 550px;
+}
+
+@media screen and (max-width: 760px) {
+	.list {
+		padding: 0 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 30px auto;
+		width: 100%;
+		z-index: 2;
+	}
+}

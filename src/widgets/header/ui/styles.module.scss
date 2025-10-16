@@ -1,0 +1,36 @@
+.section {
+	width: 100%;
+	height: 97vh;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	border-radius: 20px;
+	background: radial-gradient(circle at 30% 30%, #1e1e1e, #311212);
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		margin: 30px auto 0 auto;
+
+		&__title {
+			animation: fadein 2s;
+		}
+	}
+	&__image {
+		position: absolute;
+		transform: scaleX(-1);
+		right: 30px;
+		bottom: 0;
+		animation: fadein 1s;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
