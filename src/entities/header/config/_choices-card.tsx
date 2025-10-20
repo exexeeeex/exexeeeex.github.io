@@ -1,7 +1,7 @@
-import type { ChoiceCard } from "@/entities/models";
+import type { Card } from "@/entities/models";
 import { ChartNoAxesColumn, ContactRound, Store, Table2 } from "lucide-react";
 
-export const ChoicesCard: ChoiceCard[] = [
+export const ChoicesCard: Card[] = [
 	{
 		id: 1,
 		name: "Лендинги",

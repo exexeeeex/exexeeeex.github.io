@@ -1,8 +1,12 @@
 import type { FC } from "react";
 import "./styles.module.scss";
 
-export const HeaderTitle: FC = () => (
+type Props = {
+	title?: string;
+};
+
+export const Title: FC<Props> = ({ title }) => (
 	<div className='container'>
-		<h1>БУДУЩЕЕ РЯДОМ</h1>
+		<h1>{title}</h1>
 	</div>
 );

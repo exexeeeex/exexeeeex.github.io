@@ -1,9 +1,17 @@
 .card {
 	flex: 1;
+	height: 60px;
+
 	&__content {
 		display: flex;
 		align-items: center;
-		margin: auto 0;
+		justify-content: center;
 		gap: 10px;
+		height: 100%;
+	}
+
+	& svg {
+		max-width: 30px;
+		height: auto;
 	}
 }

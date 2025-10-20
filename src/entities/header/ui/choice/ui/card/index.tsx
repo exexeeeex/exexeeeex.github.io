@@ -1,15 +1,13 @@
 import { Card, CardContent } from "@/shared/components/ui/card";
 import type { FC } from "react";
-import type React from "react";
+import type { Card as CardType } from "@/entities/models";
 import styles from "./styles.module.scss";
 
-type Props = {
-	name: string;
-	icon: React.ReactNode;
-};
-
-export const HeaderChoiceCard: FC<Props> = ({ name, icon }) => (
-	<Card className={styles.card}>
+export const HeaderChoiceCard: FC<CardType> = ({ name, icon, onClick }) => (
+	<Card
+		onClick={onClick}
+		className={styles.card}
+	>
 		<CardContent className={styles.card__content}>
 			{icon}
 			<p>{name}</p>

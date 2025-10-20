@@ -1,6 +1,7 @@
-import { HeaderCharacter, HeaderInfo, HeaderTitle } from "@/entities/header";
+import { HeaderCharacter, HeaderInfo } from "@/entities/header";
 import type { FC } from "react";
 import { ChoiceList, HeaderButtonList } from "@/features/header";
+import { Title } from "@/shared/components/ui/title";
 import styles from "./styles.module.scss";
 
 export const Header: FC = () => {
@@ -8,7 +9,7 @@ export const Header: FC = () => {
 		<header className={styles.section}>
 			<section className={styles.section__inner}>
 				<section className={styles.section__inner__title}>
-					<HeaderTitle />
+					<Title title='БУДУЩЕЕ РЯДОМ' />
 				</section>
 				<HeaderInfo />
 				<ChoiceList />

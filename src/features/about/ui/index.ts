@@ -1,0 +1,1 @@
+export { AboutContacts } from "./contacts";

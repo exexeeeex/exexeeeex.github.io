@@ -1,0 +1,11 @@
+.place {
+	max-width: 780px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	height: 100%;
+	& Card {
+		max-height: 40px;
+	}
+}

@@ -1,3 +1,44 @@
 * {
 	font-family: "Exo 2", sans-serif;
 }
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1a1a1a;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(135deg, #e53e3e, #c53030);
+	border-radius: 10px;
+	border: 2px solid #1a1a1a;
+	transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(135deg, #f56565, #e53e3e);
+	transform: scale(1.1);
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: linear-gradient(135deg, #c53030, #9b2c2c);
+}
+
+::-webkit-scrollbar-corner {
+	background: #1a1a1a;
+}
+
+/* Для Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #e53e3e #1a1a1a;
+}

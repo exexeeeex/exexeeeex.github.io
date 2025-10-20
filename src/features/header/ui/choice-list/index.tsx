@@ -8,6 +8,7 @@ export const ChoiceList: FC = () => {
 			{ChoicesCard.map((card) => (
 				<HeaderChoiceCard
 					key={card.id}
+					id={card.id}
 					name={card.name}
 					icon={card.icon}
 				/>
